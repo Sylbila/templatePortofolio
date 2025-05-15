@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>it's My Recent Work Space!</title>
+</head>
+<body class="bg-scroll bg-purple-2">
+<div>
+    <!--navigasi-->
+    <button class=" justify-start m-8">
+        <a href="index.html"> <img src="aset/icon/arrow-left.svg" alt="arrow left" class="size-10"></a>
+    </button>
+    <!--recent work-->
+    <div class="grid md:grid-cols-2 sm:grid-cols-1">
+        <div class="grid justify-items-center mx-16">
+            <img src="aset/works2.jpg" alt="works" class="rounded-lg shadow-lg">
+        </div>
+        <div class="grid justify-items-start text-white mr-10 my-4 font-thin">
+            <div class="space-y-0 leading-tight sm:m-16 md:m-2">
+              <h1 class="text-3xl">Project Work.</h1>
+              <h2 class="text-2xl">Name Of Project</h2>
+              <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <!--tech stack and tools-->
+        <div class="grid justify-items-start my-6 mx-16">
+          <div class="flex flex-col text-white font-thin gap-3">
+            <h1 class="text-3xl">Tech Stack <\></h1>
+            <div class="grid grid-cols-5 gap-6">
+              <p class="text-xl">Kotlin</p>
+              <p class="text-xl">Flutter</p>
+              <p class="text-xl">MySQL</p>
+              <p class="text-xl">ReactJS</p>
+              <p class="text-xl">PHP</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid justify-items-end text-right my-6 mx-16">
+          <div class="flex flex-col text-white font-thin gap-3">
+            <h1 class="text-3xl">Tools {}</h1>
+            <div class="grid grid-cols-5 gap-0">
+              <p class="text-xl">Figma</p>
+              <p class="text-xl">VSCode</p>
+              <p class="text-xl">Android</p>
+              <p class="text-xl">Tablue</p>
+              <p class="text-xl">Another tools...</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="text-center mt-2 text-white font-thin">
+        <h1>@xxx2025</h1>
+    </footer>
+    </div>
+</div>    
+</body>
+<!--custom css-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'purple-1': '#8C3061',
+            'purple-2': '#522258',
+            'purple-3': '#c63c51',
+            'purple-4': '#d95f59'
+          }, 
+          fontFamily: {
+            fauna: ['"Fauna One"', 'serif']
+          },
+          screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px'
+          }
+        }
+      }
+    }
+</script>
+</html>
