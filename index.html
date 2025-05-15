@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hi! it's My Page</title>
+    <!-- highlight style -->
+    <style>
+      .highlight-target {
+        animation: highlightFade 2s ease;
+      }
+
+      @keyframes highlightFade {
+        0% { background-color:#522258; }
+        100% { background-color: transparent; }
+      }
+    </style>
+</head>
+<body class="bg-scroll bg-purple-1 scroll-smooth overflow-y-auto">
+    <div>
+    <!--navigate-->
+    <nav class="fixed z-50 top-6 w-full flex justify-center">
+        <div class="flex bg-purple-3 items-center md:mx-auto rounded-full px-6 py-2 shadow-lg space-x-6">
+            <div class="relative group">
+                <button class="flex flex-col items-center text-white hover:text-purple-100" data-target="identity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span class="absolute top-full m-3 text-xs text-white font-thin bg-purple-3 py-3 px-2 rounded-lg opacity-0 group-hover:opacity-100 transition">About Me</span>
+                </button>
+            </div>
+            <div class="relative group">
+                <button class="flex flex-col items-center text-white hover:text-purple-100" data-target="recentWork">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    <span class="absolute top-full m-3 text-xs text-white font-thin bg-purple-3 py-3 px-2 rounded-lg opacity-0 group-hover:opacity-100 transition">Work's</span>
+                </button>
+            </div>
+            <div class="relative group">
+                <button class="flex flex-col items-center text-white hover:text-purple-100" data-target="cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                    <span class="absolute top-full m-3 text-xs text-white font-thin bg-purple-3 py-3 px-2 rounded-lg opacity-0 group-hover:opacity-100 transition">CV</span>
+                </button>
+            </div>
+            <div class="relative group">
+                <button class="flex flex-col items-center text-white hover:text-purple-100" data-target="contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span class="absolute top-full m-3 text-xs text-white font-thin bg-purple-3 py-3 px-2 rounded-lg opacity-0 group-hover:opacity-100 transition">My Contact</span>            
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="h-screen ">
+        <div class="h-24"></div>
+    <!--identity-->
+    <div class="x-40 top w-full flex justify-center" id="identity">
+        <div class="flex bg-purple-2 items-center lg:mx-8 mx-4 rounded-lg shadow-lg md:px-6 px-2 py-4">
+            <div class="grid grid-cols-2 gap-0">
+                <div class="grid grid-rows-2 grid-flow-col gap-0 text-white md:ml-10 sm:ml-2">
+                    <h2 class="font-thin text-3xl mt-10">Hi there! I’m Putri Nanda</h2>
+                    <p class="font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="flex justify-end pr-8 md:mt-0 mt-12">
+                    <img src="aset/foto profile.jpg" alt="foto profile" class="size-60 rounded-full shadow-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--soft skill-->
+    <div class="w-full flex justify-center mt-10" id="softSkill">
+        <div class="flex items-start px-6 py-2 gap-24 text-white text-2xl">
+            <div class="flex flex-col gap-4 items-center">
+                <h2 class="font-thin">Soft skill</h2>
+                <div class="flex flex-row gap-10">
+                    <div class="relative group">
+                        <img src="aset/problem solving.jpg" alt="problem solving" class="size-32 rounded-md shadow-lg object-cover">
+                        <div class="absolute inset-0 hidden group-hover:block bg-black/70 text-white md:text-lg sm:text-sm font-thin rounded-md text-center">
+                            <p class="m-8">Problem Solving</p>
+                        </div>
+                    </div>
+                    <div class="relative group w-max">
+                        <img src="aset/critical thinking.jpg" alt="critical thinking" class="size-32 rounded-md shadow-lg object-cover">
+                        <div class="absolute inset-0 hidden group-hover:block bg-black/70 text-white md:text-lg sm:text-sm font-thin rounded-md text-center">
+                            <p class="m-8">Critical Thinking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--tech skill-->
+            <div class="flex flex-col gap-4 items-center">
+                <h1 class="font-thin">Tech skill</h1>
+                <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8 mr-6">
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://kotlinlang.org/" class="text-white text-xl font-thin m-4">.Kotlin</a>
+                    </div>
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://www.java.com/en/" class="text-white text-xl font-thin m-4">.Java</a>
+                    </div>
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://react.dev/" class="text-white text-xl font-thin m-4">.ReactJs</a>
+                    </div>
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://jetpack.com/id" class="text-white text-xl font-thin m-4">.Jetpack</a>
+                    </div>
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://www.mongodb.com/" class="text-white md:text-xl font-thin m-4">.MongoDB</a>
+                    </div>
+                    <div class="bg-purple-4 items-center mx-auto rounded-full shadow-lg">
+                        <a href="https://v3.tailwindcss.com/" class="text-white text-xl font-thin m-4">.Tailwind</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--recent work-->
+    <div id="recentWork">
+        <div class="w-full text-center text-white text-3xl my-8 font-thin">
+        <h1>Recent Work</h1>
+    </div>
+    <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4 justify-center mb-8 mx-12">
+        <div class="flex justify-center items-center">
+            <div class="relative group">
+                <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
+                <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
+                   <a href="workPage.html" class="z-20 text-white font-thin py-2 px-3 text-lg underline decoration-solid">Recent Work</a>
+                    <p  class="text-white font-thin py-0 px-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="relative group">
+                <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
+                <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
+                   <a href="workPage.html" class="z-20 text-white font-thin py-2 px-3 text-lg underline decoration-solid">Recent Work</a>
+                    <p  class="text-white font-thin py-0 px-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="relative group">
+                <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
+                <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
+                   <a href="workPage.html" class="z-20 text-white font-thin py-2 px-3 text-lg underline decoration-solid">Recent Work</a>
+                    <p  class="text-white font-thin py-0 px-3 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--CV-->
+    <div id="cv">
+    <div class=" flex flex-col gap-2 justify-center items-center bg-purple-3 h-24 md:mx-56 sm:mx-12 rounded-xl mb-4">
+       <h4 class="text-white text-2xl font-thin">You can see my CV here</h4>
+       <button class=" inline-flex gap-3 items-center border border-white rounded-full px-4 py-2 text-sm hover:bg-white hover:text-rose-700 transition mb-3">
+        Click to Download
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download-cloud"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
+        </button>
+    </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+    <div class="flex bg-purple-2 items-center lg:mx-80 sm:mx-12 rounded-lg shadow-lg my-8">
+        <div class="grid grid-cols-2 gap-0">
+            <div class="size-64 rounded-full bg-purple-1 flex items-center overflow-hidden mr-8 justify-start">
+                <img src="aset/foto profile.jpg" alt="profile" class="size-56 rounded-full shadow-lg object-cover m-4">
+            </div>
+            <div class="flex flex-col items-start my-2">
+                <h1 class="text-3xl text-white font-thin">Contact and Social Media</h1>
+                <div class="flex flex-row m-2">
+                    <div class="size-12 mr-4">
+                        <img src="aset/2b21c2573a15a3647bf48366ff180c60.jpg" alt="instagram" class="rounded-lg">
+                    </div>
+                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of Instagram</h2>
+                </div>
+                <div class="flex flex-row m-2">
+                    <div class="size-12 mr-4">
+                        <img src="aset/272740856f06762c8dada2ed8a205fb7.jpg" alt="Tiktok" class="rounded-lg">
+                    </div>
+                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of TikTok</h2>
+                </div>
+                <div class="flex flex-row m-2">
+                    <div class="size-12 mr-4">
+                        <img src="aset/logo github.png" alt="github" class="rounded-lg">
+                    </div>
+                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of Github</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+    <footer class="text-center mt-8 text-white font-thin">
+        <h1>@xxx2025</h1>
+    </footer>
+    </div>
+</div>
+    
+</body>
+<!--custom css-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'purple-1': '#8C3061',
+            'purple-2': '#522258',
+            'purple-3': '#c63c51',
+            'purple-4': '#d95f59'
+          }, 
+          fontFamily: {
+            fauna: ['"Inter"', 'sans-serif']
+          },
+          screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px'
+          }
+        }
+      }
+    }
+    document.querySelectorAll('[data-target]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80, //header offset
+            behavior: 'smooth'
+          });
+          //highlight class
+          target.classList.add('highlight-target');
+          setTimeout(() => {
+          target.classList.remove('highlight-target');
+        }, 1600); //duration
+        }
+      });
+    });
+</script>
+</html>  
