@@ -52,7 +52,7 @@
     <!--identity-->
     <div class="x-40 top w-full flex justify-center" id="identity">
         <div class="flex bg-purple-2 items-center lg:mx-8 mx-4 rounded-lg shadow-lg md:px-6 px-2 py-4">
-            <div class="grid grid-cols-2 gap-0">
+            <div class="grid lg:grid-cols-2  sm:grid-cols-1 gap-0">
                 <div class="grid grid-rows-2 grid-flow-col gap-0 text-white md:ml-10 sm:ml-2">
                     <h2 class="font-thin text-3xl mt-10">Hi there! I’m Putri Nanda</h2>
                     <p class="font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -109,13 +109,13 @@
             </div>
         </div>
     </div>
-    <!--recent work-->
+   <!--recent work-->
     <div id="recentWork">
         <div class="w-full text-center text-white text-3xl my-8 font-thin">
         <h1>Recent Work</h1>
     </div>
-    <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4 justify-center mb-8 mx-12">
-        <div class="flex justify-center items-center">
+    <div class="flex flex-col lg:justify-center sm:flex-row sm:overflow-x-auto sm:space-x-4 space-y-4 sm:space-y-0 px-4 mb-8 mx-4">
+        <div class="flex-shrink-0 flex justify-center items-center">
             <div class="relative group">
                 <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
                 <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex-shrink-0 flex justify-center items-center">
             <div class="relative group">
                 <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
                 <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex-shrink-0 flex justify-center items-center">
             <div class="relative group">
                 <img src="aset/works.jpg" alt="works" class="h-48 w-80 rounded-md shadow-lg object-cover">
                 <div class="absolute bg-purple-2 rounded-lg bottom-2 mx-3 bg-opacity-80">
@@ -156,30 +156,30 @@
     </div>
     <!--Contact-->
     <div id="contact">
-    <div class="flex bg-purple-2 items-center lg:mx-80 sm:mx-12 rounded-lg shadow-lg my-8">
+    <div class="flex bg-purple-2 items-center lg:mx-96 sm:mx-12 rounded-lg shadow-lg my-8">
         <div class="grid grid-cols-2 gap-0">
             <div class="size-64 rounded-full bg-purple-1 flex items-center overflow-hidden mr-8 justify-start">
                 <img src="aset/foto profile.jpg" alt="profile" class="size-56 rounded-full shadow-lg object-cover m-4">
             </div>
-            <div class="flex flex-col items-start my-2">
-                <h1 class="text-3xl text-white font-thin">Contact and Social Media</h1>
+            <div class="flex flex-col items-start justify-center my-2">
+                <h1 class="text-2xl text-white font-thin">Contact and Social Media</h1>
                 <div class="flex flex-row m-2">
-                    <div class="size-12 mr-4">
+                    <div class="size-8 mr-4">
                         <img src="aset/2b21c2573a15a3647bf48366ff180c60.jpg" alt="instagram" class="rounded-lg">
                     </div>
-                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of Instagram</h2>
+                    <h2 class="text-lg text-white font-thin underline underline-offset-8">@Name Of Instagram</h2>
                 </div>
                 <div class="flex flex-row m-2">
-                    <div class="size-12 mr-4">
+                    <div class="size-8 mr-4">
                         <img src="aset/272740856f06762c8dada2ed8a205fb7.jpg" alt="Tiktok" class="rounded-lg">
                     </div>
-                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of TikTok</h2>
+                    <h2 class="text-lg text-white font-thin underline underline-offset-8">@Name Of TikTok</h2>
                 </div>
                 <div class="flex flex-row m-2">
-                    <div class="size-12 mr-4">
+                    <div class="size-8 mr-4">
                         <img src="aset/logo github.png" alt="github" class="rounded-lg">
                     </div>
-                    <h2 class="text-xl text-white font-thin underline underline-offset-8">@Name Of Github</h2>
+                    <h2 class="text-lg text-white font-thin underline underline-offset-8">@Name Of Github</h2>
                 </div>
             </div>
         </div>
@@ -208,7 +208,7 @@
             fauna: ['"Inter"', 'sans-serif']
           },
           screens: {
-            'sm': '640px',
+            'sm': '320px',
             'md': '768px',
             'lg': '1024px',
             'xl': '1280px',
